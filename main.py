@@ -1,8 +1,9 @@
-# write a calcuator  to add numbers
-def add_numbers(a, b):
-    """Returns the sum of two numbers."""
-    return a + b
-
-def add_multiple_numbers(*args):
-    """Returns the sum of multiple numbers."""
-    return sum(args)                        
+# write a calcuator  to add numbers with user input 
+def add_numbers():
+    try:
+        num1 = float(input("Enter the first number: "))
+        num2 = float(input("Enter the second number: "))
+        result = num1 + num2
+        print(f"The result of adding {num1} and {num2} is: {result}")
+    except ValueError:
+        print("Invalid input. Please enter numeric values.")        
